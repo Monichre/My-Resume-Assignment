@@ -14,13 +14,15 @@ body {
   text-align: center;
   border-style: solid;
   border-color: black;
-  margin-left: 238px;
+  margin-left: 240px;
   margin-top: 15px;
 }
 
 .btn a {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: lighter;
+  background-color: black;
+  color: white;
 }
 .circular img {
   vertical-align: center;
