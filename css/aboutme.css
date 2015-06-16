@@ -2,12 +2,22 @@ body {
 	color: black;
 }
 
-h2 { 
+
+}
+.container {
+	color: black;
+	text-align: center;
+	margin-top: 40px;
+}
+.aboutme h2 { 
 	text-align: center;
 	color: black;
+	margin-top: 40px;
 }
-p {
+.aboutme p {
 	color: black;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 /* Inherited CSS
@@ -26,8 +36,10 @@ p {
 }
 .row {
 	margin-top: 40px;
+	color: black;
 }
 
 .row p {
 	margin-top: 20px;
+	color: black;
 }
