@@ -1,7 +1,9 @@
 body {
 	color: black;
 }
-
+.navbar-header {
+	margin-top: 0px;
+}
 
 }
 .container {
