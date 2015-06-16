@@ -1,1 +1,28 @@
-resume.style.css
+h1 {
+	text-align: center;
+}
+.info p {
+	text-align: center;
+	font-weight: 200;
+	margin-top: 15px;
+}
+
+.photo img {
+	float: left;
+}
+
+h2 {
+	text-align: center;
+}
+.experience p {
+	text-align: center;
+}
+.resume {
+	margin-left: 30px;
+}
+.resume li {
+	font-weight: 300;
+}
+.resume p {
+	font-weight: normal;
+}
