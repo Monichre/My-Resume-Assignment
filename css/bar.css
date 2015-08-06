@@ -1,0 +1,58 @@
+
+/* HACKS */
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/* LAYOUT */
+
+
+
+
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    color: gray;
+}
+
+#outer{
+    float: left;
+    background-image: url(../images/whiskey.jpg);
+
+}
+
+#middle {
+    max-width   : 90%;
+    float: left;
+}
+
+
+
+aside {
+    float: left;
+    width: 40%;
+}
+
+footer {
+    clear: both;
+    min-width: 100%;
+}

@@ -1,21 +1,27 @@
+
+
+body {
+	background-image: url(../images/coffee2.jpg);
+	background-size: cover;
+	color: #707070 ;
+}
+
 h1 {
 	text-align: center;
+	color: #C8C8C8 ;
+	font-variant: small-caps;
 }
 .info p {
 	text-align: center;
 	font-weight: 200;
 	margin-top: 15px;
+	color: #C8C8C8 ;
 }
 
-.photo img {
-	float: left;
-}
 
-h2 {
-	text-align: center;
-}
 .experience p {
 	text-align: center;
+	color: #C8C8C8 ;
 }
 .resume {
 	margin-left: 30px;
@@ -26,3 +32,4 @@ h2 {
 .resume p {
 	font-weight: normal;
 }
+
