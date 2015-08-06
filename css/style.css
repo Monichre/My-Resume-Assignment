@@ -21,7 +21,7 @@
 }
 
 
-/* LAYOUT */
+/* ----LAYOUT------ */
 
 body {
   
@@ -52,6 +52,16 @@ body {
   background-color: #222;
   border-color: #080808;
 
+}
+
+/*---First Slide CSS----*/
+
+#home {
+  background: url(../images/shoes.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
@@ -96,11 +106,6 @@ body {
 @keyframes mymove {
     50% {transform: rotate(180deg);}
 }
-  
-
-
-
-
 
 p {
   font-family: "Courier New", Courier, monospace;
@@ -123,6 +128,149 @@ p {
   font-size:1em;
   display: inline-block;
 }
+
+
+/*---ABOUT ME CSS--- */
+
+#aboutme {
+  background: url(../images/city.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.grid {
+  width:1600px;
+  margin: 0 auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item and caption text overlay CSS ---- */
+
+.grid-item {
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom:20px;
+  border: black;
+}
+
+.caption {
+    position: relative;
+    overflow: hidden;
+}
+
+.caption__media {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.caption__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay {
+    transform: translateY(0);
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.city {
+  width: 600px;
+}
+
+.me {
+  width:600px;
+}
+
+/*---this is the third slight --the #aboutme2 portion---*/
+
+#aboutme2 {
+  background: url(../images/sky-828648_1280.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.stools {
+
+}
+
+.bar {
+
+}
+
+.moon {
+  width: 400px;
+}
+
+
+/*--- End of ABOUT ME CSS ---*/
+/*---RESUME CSS --*/
+#resume {
+  background-image: url(../images/coffee2.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#resume h1 {
+  text-align: center;
+  color: #C8C8C8 ;
+  font-variant: small-caps;
+}
+.info p {
+  text-align: center;
+  font-weight: 200;
+  margin-top: 15px;
+  color: #C8C8C8 ;
+}
+
+
+.experience p {
+  text-align: center;
+  color: #C8C8C8 ;
+}
+.resume {
+  margin-left: 30px;
+}
+.resume li {
+  font-weight: 300;
+}
+.resume p {
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 360px) {
 
