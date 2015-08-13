@@ -85,6 +85,7 @@ ul.nav.navbar-nav li a {color:#D8D8D8 ;}
   background-size: cover;
 }
 
+
  
 main p {
   font-size: 1em;
@@ -95,6 +96,17 @@ main p {
   font-style: bold;
   display: none;
 
+}
+
+.hide {
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+  color:#D8D8D8 ;
+  margin-top: 44%;
+  margin-left: 2%;
+  font-style: bold;
+  display: visible;
+  
 }
 
 
@@ -117,34 +129,6 @@ main p {
 }
 
 
-/* ---- grid-item and caption text overlay CSS ---- */
-
-
-.caption {
-    position: relative;
-    overflow: hidden;
-}
-
-.caption__media {
-    
-   
-    
-}
-.caption__overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    color: white;
-    transform: translateY(100%);
-    transition: transform .35s ease-out;
-}
-
-.caption:hover .caption__overlay {
-    transform: translateY(0);
-}
 
 
 .me {
@@ -168,7 +152,7 @@ main p {
 
 }
 .me article p {
-  font-size: .8em;
+  font-size: .9em;
   font-family: "Courier New", Courier, monospace;
   color: white;
  
@@ -176,7 +160,7 @@ main p {
   text-align: left;
   height: 400px;
   width: inherit;
-  overflow: scroll;
+  overflow-y: scroll;
 
 }
 
@@ -184,8 +168,8 @@ main p {
 
 #aboutme main {
   float: left;
-  margin-top: 480px;
-  margin-left: 500px;
+  margin-top: 455px;
+  margin-left: 30px;
   border: thin;
   background-color: #222;
   border-color: #080808;
@@ -194,7 +178,9 @@ main p {
 
 }
 
-
+.gallery {
+  display: none;
+}
 
 .gallery article {
   float: left;
@@ -216,6 +202,7 @@ main p {
   font-size: 1em;
   font-family: "Courier New", Courier, monospace;
   color: white;
+  text-align: center;
   
 
   
@@ -224,61 +211,17 @@ main p {
 
 
 /*--- End of ABOUT ME CSS ---*/
-/*---RESUME CSS --*/
-#resume {
-  background: url(../images/coffee2.jpg) no-repeat center center fixed;
- -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#resume h1 {
-  text-align: center;
-  color: #C8C8C8 ;
-  font-variant: small-caps;
-}
-.info p {
-  text-align: center;
-  font-weight: 200;
-  margin-top: 15px;
-  color: #C8C8C8 ;
-}
-
-
-.experience p {
-  text-align: center;
-  color: #C8C8C8 ;
-}
-.resume {
-  margin-left: 30px;
-}
-.resume li {
-  font-weight: 300;
-}
-.resume p {
-  font-weight: normal;
-}
 
 /*---DWP page----*/
 
-#dwp-page{
-  background: url(http://j.gifs.com/vnN64j.gif) no-repeat center center fixed;
- -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 
-  
-}
 
 /*--Masonry grid-item CSS--*/
 
 .grid {
   
   padding-top: 70px;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin:0 auto;
  ;
 }
 
@@ -303,11 +246,20 @@ main p {
 }
 /*---end masonry css---*/
 
+#dwp-page{
+  background: url(http://j.gifs.com/vnN64j.gif) no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
 
 .dwp {  
   width: 300px;
-  margin-left: 10px;
+  margin: 0 auto;
   border-radius: 5px;
+  height: 600px;
 }
 
 .dwp img {
@@ -344,14 +296,19 @@ main p {
   font-family: "Courier New", Courier, monospace;
 }
 
-.dwp-liamandjoe {
-  
+
+.dwp {
+  margin: 0 auto;
 }
+
+.dwp-liamandraiche,.dwp-hynlcb,.fullband,.guitar,.dwp-table,.dwp-sitting {
+  display: none;
+ }
 
 
 /*---THIS IS THE BRO DYNASTY CSS--*/
 
-.broD {
+#broD {
   background: url(http://j.gifs.com/m8R6Rx.gif) no-repeat center center fixed;
  -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -376,28 +333,43 @@ main p {
 }
 
 @media screen and (min-width: 360px) {
-  .circular img {
-  display: block;
-  margin: 0 auto;
-  width: 225px;
-  height: 225px;
-  border-radius: 125px;
-}
  
 
 
 }
 
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 700px) {
 
 #sky p {
     display: inline-block;
   }
+ .gallery {
+  display: inline-block;
+ }
+ .dwp-table,.dwp-sitting {
+  display: inline-block;
+ }
+
+ .hide {
+  display: none;
+ }
+
+}
+
+@media screen and (min-width: 1000px) {
+ .dwp-liamandraiche,.dwp-hynlcb,.fullband,.guitar {
+  display: inline-block;
+ }
+
+.dwp {
+  height: auto;
+  margin-left: 10px;
+}
 
 }
 
 
-}
+
 
 
