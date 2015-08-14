@@ -1,44 +1,373 @@
+/* HACKS */
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/* ----LAYOUT------ */
+
 body {
-  border-color: white;
-  color:gray;
+  
   /*margin: 20px;*/
   font-family: helvetica;
   font-weight: lighter;
   font-size: 15px;
-  padding bottom: 0px;
+  padding top: 70px;
+  min-width: 100%;
+  
 }
 
-.btn {
+/*---Nav bar shit--*/
+
+.navbar-fixed-top {
+  background-color: #222;
+  border-color: #080808;
+  opacity: .7;
+
+}
+
+
+ .navbar-collapse li a:hover {
+  color: red;
+}
+
+ul.nav.navbar-nav li {border: none;}
+ul.nav.navbar-nav li:hover {color: inherit;}
+
+ul.nav.navbar-nav li a {color:#D8D8D8 ;}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, ul.dropdown-menu {
+  background-color: #222;
+  border-color: #080808;
+}
+
+.img-circle {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {-webkit-transform: rotate(180deg);}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {transform: rotate(180deg);}
+}
+
+/*---First Slide CSS----*/
+
+#home {
+  background: url(../images/raincity.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+ 
+main p {
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+  color:#D8D8D8 ;
+  margin-top: 44%;
+  margin-left: 2%;
+  font-style: bold;
+  display: none;
+
+}
+
+.hide {
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+  color:#D8D8D8 ;
+  margin-top: 44%;
+  margin-left: 2%;
+  font-style: bold;
+  display: visible;
+  
+}
+
+
+.red {
+  color: red;
+  font-size:1em;
   display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  border-style: solid;
-  border-color: black;
-  margin-left: 240px;
-  margin-top: 15px;
 }
 
-.btn a {
-  font-size: 20px;
-  font-weight: lighter;
-  background-color: black;
+
+/*---ABOUT ME PAGE CSS--- */
+
+#aboutme {
+  background: url(../images/street-839820_1280.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+}
+
+
+
+
+.me {
+  margin-top: 70px;
+  float: left;
+  border-radius: 5px;
+  margin-left: 40px;
+  width: 300px;
+
+}
+
+.me img {
+  width: inherit;
+  border-radius: 5px;
+}
+.me article { 
+  border:thin black;
+  background-color: #222;
+  border-color: #080808;
+  opacity: .7;
+
+}
+.me article p {
+  font-size: .9em;
+  font-family: "Courier New", Courier, monospace;
   color: white;
-}
-.circular img {
-  vertical-align: center;
-  margin-left: 445px;
-  margin-top: 125px;
-  width: 225px;
-  height: 225px;
-  border-radius: 125px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  border-style: solid;
-  border-color: white;
+ 
+  padding: 1.5%;
+  text-align: left;
+  height: 400px;
+  width: inherit;
+  overflow-y: scroll;
+
 }
 
+/*---Gallery CSS---*/
+
+#aboutme main {
+  float: left;
+  margin-top: 455px;
+  margin-left: 30px;
+  border: thin;
+  background-color: #222;
+  border-color: #080808;
+  opacity: .7;
+  border-radius: 5px;
+
+}
+
+.gallery {
+  display: none;
+}
+
+.gallery article {
+  float: left;
+  margin: 10px;
+ 
+
+
+}
+
+.gallery img {
+
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+
+}
+
+.caption h1 {
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  text-align: center;
+  
+
+  
+}
 
 
 
+/*--- End of ABOUT ME CSS ---*/
+
+/*---DWP page----*/
+
+
+
+/*--Masonry grid-item CSS--*/
+
+.grid {
+  
+  padding-top: 70px;
+  margin:0 auto;
+ ;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: relative;
+  clear: both;
+}
+
+
+.grid-item {
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom:20px;
+  border: black;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+/*---end masonry css---*/
+
+#dwp-page{
+  background: url(http://j.gifs.com/vnN64j.gif) no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+
+.dwp {  
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 600px;
+}
+
+.dwp img {
+  width: inherit;
+  border-radius: 5px;
+}
+.dwp article {
+  background-color: #222;
+  border-color: #080808;
+  opacity: .7;
+  
+}
+
+.dwp article p {
+  padding: 2%;
+  text-align:left;
+  color: #D8D8D8;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+
+
+.dwp-sitting article {
+  background-color: #222;
+  border-color: #080808;
+  opacity: .7;
+}
+
+.dwp-sitting article p {
+  padding: 2%;
+  text-align:left;
+  color: #D8D8D8;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+.dwp {
+  margin: 0 auto;
+}
+
+.dwp-liamandraiche,.dwp-hynlcb,.fullband,.guitar,.dwp-table,.dwp-sitting {
+  display: none;
+ }
+
+
+/*---THIS IS THE BRO DYNASTY CSS--*/
+
+#broD {
+  background: url(http://j.gifs.com/m8R6Rx.gif) no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.image {
+  padding-top: 300px;}
+
+
+.image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+
+
+}
+
+@media screen and (min-width: 360px) {
+ 
+
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+#sky p {
+    display: inline-block;
+  }
+ .gallery {
+  display: inline-block;
+ }
+ .dwp-table,.dwp-sitting {
+  display: inline-block;
+ }
+
+ .hide {
+  display: none;
+ }
+
+}
+
+@media screen and (min-width: 1000px) {
+ .dwp-liamandraiche,.dwp-hynlcb,.fullband,.guitar {
+  display: inline-block;
+ }
+
+.dwp {
+  height: auto;
+  margin-left: 10px;
+}
+
+}
 
 
 

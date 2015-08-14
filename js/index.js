@@ -1,14 +1,43 @@
+
+
+  
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
+
+//---This is my scrollify Jquery plug-in---//
+
+  $.scrollify({
+    section : "section",
   });
+
+
+        
+
+//---This is my custom Jquery---//
+
+
+  
+
+  //-- This is my masonry Jquery plug-in--//
+
+  $('.grid').masonry({
+  "itemSelector": '.grid-item',
+  "gutter": 10,
+  
+  "isFitWidth": true,
+  
+  
+});
+
+  
+
+  //---this is my jcloud attempt---//
+
+  $('#sky').jQlouds({
+  wind: true,
+  minClouds: 5,
+  maxClouds: 10
+});
+
+
+        
 });
