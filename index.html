@@ -2,11 +2,14 @@
 <html>
 <head>
 	<title>Liam H Ellis</title>
-
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio Site">
+  <meta name="keywords" content="Web Developer, Web Design, Dandylion Warpaint, portfolio, isotope, masonry">
+  <meta name="author" content="Liam Ellis">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-  <link rel="stylesheet" type="text/css" href="css/resume.css">
-  
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   
 </head>
@@ -17,7 +20,6 @@
 
 	<div class="navbar-wrapper">
     <div class="container">
-
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -33,34 +35,29 @@
               <li><img src="images/10940554_10101272444148741_1905445767968746256_n.jpg" class="img-circle" alt="Liam profile" width="50" height="50"> </li>
             	<li><a href="https://www.facebook.com/liam.ellis.104"> Liam Ellis</a></li>
               <li><a href="#aboutme">About Me</a></li>
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Music<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#dwp-page">Dandylion Warpaint</a></li>
-                <li><a href="#broD">Bro Dynasty</a></li>
-              </ul>
+              <li><a href="#grid-page">Music</a></li>
               <li><a href="resume.html">Resume</a></li>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
     </div>
   </div>
   <section id="home">
     <main id="sky">
-      <p class="hide"><em class="red">"</em> It is only the inferior thinker who hastens to explain the singular and the complex by the primitive shortcut of supernaturalism...<em class="red">"</em> <em>H.P.</em></p>
+      <div class="mobile">The isms go <br/> The ist dies <br/> Art remains <br/> <em class="red">~</em>Nabokov</div>
+
+      
       <p><em class="red">"</em> The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the light into the peace and safety of a new dark age...<em class="red">"</em> <em>H.P.</em></p>
       	  
     </main>
-  </section>
+  </section><!--End of first slide-->
 
     <!-- THIS IS THE SECOND SLIDE, ITS ALSO USING USING THE MASONRY JQUERY PLUG_IN -->
 
 
   <section id="aboutme">
-
-   
     <div class="me">
       <img src="images/scholarly.jpg">
       <article>
@@ -82,70 +79,158 @@
         </article>
       </div>
     </main>
-  </section>
+  </section><!--end of second section slide-->
 
      
 
-    <!-- THIS was THE THIRD SLIDE STILL USING A PLUG-IN -->
+    
+    <!--Isotope and Masonry plug-ins-->
 
-  <section id= "dwp-page">
-    <div class="grid">
-      <div class="grid-item dwp">
-      
-          <img src="images/dwp.jpg">
-            <article>
-              <p>THUMP. Our neighbor's sweaty body collided into our shared apartment wall. Ashy term papers skidded across a wine stained coffee table. "Damn it Joe, turn your bass down." 5 nights a week we played music in an overpriced brownstone in Minneapolis. We dropped out of college, we dropped out of law school, our pants got tighter. Joe just wouldn't turn his bass down.</p>
-            </article>
-      </div>
-      <div class="grid-item dwp-sitting">
-        
-        <img src="images/dwpsitting.jpg">
-        <article>
-            <p>Dandylion Warpaint is a five-piece independent band from Minneapolis, MN. Their music displays elements ranging from Rock and Electronic to Jazz and Hip Hop. Individually, each member brings a diverse array of influences that manifest in melody driven, passionate male vocals; harmonically and texturally rich atmospheric synth and keyboards; inspired, effect-driven lead guitar; motivic, jazzy bass grooves; and intricate drums often stylistically guided by electronic influences</p>
-          </article>
-      </div>
-       <div class="grid-item dwp-table">
-        
-          <img src="images/dwp-table.jpg">
-      </div>
-      <div class="grid-item dwp-liamandraiche">
-        
-          <img src="images/liamandraiche.png">
-      </div>
-      <div class="grid-item dwp-hynlcb">
-        
-          <img src="images/hynlcb.jpg">
-      </div>
-     
-      <div class="grid-item fullband">
-        
-          <img src="images/fullband.jpg">
-      </div>
-      <div class="grid-item guitar">
-        
-          <img src="images/guitar.jpg">
-      </div>
-     
+  <section id= "grid-page">
 
+  <!-- Custom Jquery navbox for isotope filtering -->
+    <div class="navbox">
+      <div class="controls">
+        <h2>Bro D</h2>
+          <a data-filter= ".bro" class="filterB"><img class="img-circle c2"src="images/bdicon.jpg"></a>
+        <h2>Dwp</h2>
+
+          <a data-filter= ".dwp" class= "filterD"><img class="img-circle c2"src="images/dwpicon.jpg"></a>
+      </div>
     </div>
 
+      <!--Start of actual grid page -->
+
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      
+      <div class="grid-item dwp overlay-image">
+
+        <div class="overlay">
+          <span id="filter"><a>Filter Media</a></span>
+        </div>
+         
+      </div>
+      <div class="grid-item grid-item-w2 dwp">
+        <img src="images/dwpsitting.jpg">
+      </div>
+      <div class="grid-item dwp">
+        
+        <img src="images/dwp-table.jpg">
+      </div>
+      <div class="grid-item dwp">
+        
+        <img src="images/liamandraiche.png">
+      </div>
+      <div class="grid-item dwp">
+        
+        <img src="images/hynlcb.jpg">
+      </div>
+     
+      <div class="grid-item dwp">
+        
+        <img src="images/fullband.jpg">
+      </div>
+      <div class="grid-item dwp">
+        
+        <img src="images/guitar.jpg">
+      </div>
+     
+      <div class="grid-item bro">
+        
+        <img src="images/carbd.jpg">
+      </div>
+      <div class="grid-item overlay-image2">
+
+        <div class="overlay">
+          <span id="filter"><a href ="https://brodynasty.bandcamp.com/">Check me out</a></span>
+        </div>
+      </div>
+        
+      <div class="grid-item bro">
+        
+        <img src="images/fieldbd.jpg">
+      </div>
+      <div class="grid-item bro bd3">
+        
+        <img src="images/bd3.jpg">
+      </div>
+      <div class="grid-item bro bd4">
+        
+        <img src="images/bd4.jpg">
+      </div>
+      <div class="grid-item bro grid-item-w2">
+        
+        <img src="images/bdpiano.jpg">
+      </div>
+      <div class="grid-item bro grid-item-w2">
+        
+        <img src="images/bdpiano2.jpg">
+      </div>
+      <div class="grid-item bro grid-item-w2">
+        <video controls>
+          <source src="images/comeabrupt.mp4" type="video/mp4">
+        </video>
+      </div>
+    
+
+      <!--hidden section for full 'dwp' and 'bro' Isotope filters -->
+
+      <!--bro first-->
+     
+      <div class="grid-item dude bro">
+        <img src="images/bdicon.jpg">
+      </div>
+      <div class="grid-item dude bro ">
+        <img src="images/tigerbd.png">
+      </div>
+      <div class="grid-item bro dude grid-item-w2">
+        <video controls>
+          <source src="images/promo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="grid-item bro dude">
+        <img src="images/americanbro.png">
+      </div>
+      <div class="grid-item dude bro">
+        <a href="https://soundcloud.com/dynstyband/sets/munqs-dynsty-ep"></a>
+      </div>
+
+      <!--DWP stuff-->
+      <div class="grid-item dwp dude grid-item-w2">
+        <video controls>
+          <source src="images/comingdown.mp4" type="video/mp4">
+        </video>
+      </div>
+       <div class="grid-item dude dwp">
+        <img src="images/cartoon.jpg">
+      </div>
+      <div class="grid-item dude dwp">
+        <img src="images/liamandnjoe.jpg">
+      </div>
+      <div class="grid-item dude dwp">
+        <img src="images/liamraiche2.jpg">
+      </div>
+      <div class="grid-item dude dwp">
+        <img src="images/dwpparty.jpg">
+      </div>
+      <div class="grid-item dude dwp">
+        <img src="images/musician photo.jpg">
+      </div>
+      <div class="grid-item dude dwp">
+        <img src="images/zach.jpg">
+      </div>
+    </div><!--end of grid -->
   </section>
-
- <!-- THIS IS THE FOURTH SLIDE -->
-
- <section id="broD" style="height:470px;">
-  <div class="image">
-    <a href="brodynasty.html"><img src="images/play_button.png" class="hidebro"></a>
-  </div>
-
-   
- </section>
 </body>
 
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/mason.js"></script>
+  
+  // <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script>
+
   <script type="text/javascript" src="js/jquery.scrollify.min.js"></script>
   
   <script src="js/jqlouds.js"></script>
